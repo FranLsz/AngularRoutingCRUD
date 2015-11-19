@@ -1,0 +1,15 @@
+﻿<div>
+    <h2>{{label}}</h2>
+    <div>
+        <a href="#/alumnos/nuevo">Añadir alumno nuevo</a>
+    </div>
+    <br/><br/>
+    Buscar:<br/>
+    <input type="text" placeholder="Nombre del alumno..." ng-model="query"/>
+    <ul>
+        <li ng-repeat="a in alumnos | filter:{nombre:query}">
+            <a href="#/alumnos/{{a.id}}">{{a.nombre + " " + a.apellidos}}</a>
+        </li>
+    </ul>
+
+</div>

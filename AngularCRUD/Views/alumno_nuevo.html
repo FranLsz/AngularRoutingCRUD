@@ -1,0 +1,16 @@
+﻿<div>
+    <h2>{{label}}</h2>
+    <br />
+    <form name="nuevoAlumnoForm" novalidate="novalidate" ng-submit="submit()">
+        <input type="text" placeholder="Nombre" ng-model="alumno.nombre" required /><br /><br />
+        <input type="text" placeholder="Apellidos" ng-model="alumno.apellidos" required /><br /><br />
+        <input type="text" placeholder="Edad" ng-model="alumno.edad" required /><br /><br />
+        <input type="text" placeholder="Provincia" ng-model="alumno.provincia" required /><br /><br />
+        <button ng-disabled="nuevoAlumnoForm.$invalid">{{btnLabel}}</button><br />
+    </form>
+    <br />
+    <hr />
+    <a href="#/alumnos">Volver al listado</a>
+
+
+</div>
