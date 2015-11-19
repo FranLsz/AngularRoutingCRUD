@@ -11,7 +11,7 @@ app.config(["$routeProvider", function ($routeProvider) {
         controller: "AlumnoListadoCtrl"
     })
     .when("/alumnos/nuevo", {
-        templateUrl: "views/alumno_nuevo.html",
+        templateUrl: "views/alumno_nuevo_editar.html",
         controller: "AlumnoNuevoCtrl"
     })
     .when("/alumnos/:alumnoId", {
@@ -19,7 +19,7 @@ app.config(["$routeProvider", function ($routeProvider) {
         controller: "AlumnoDetalleCtrl"
     })
     .when("/alumnos/:alumnoId/editar", {
-        templateUrl: "views/alumno_nuevo.html",
+        templateUrl: "views/alumno_nuevo_editar.html",
         controller: "AlumnoEditarCtrl"
     })
     .otherwise({

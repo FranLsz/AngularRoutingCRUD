@@ -78,7 +78,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="Scripts\app.js" />
-    <Content Include="Views\alumno_nuevo.html" />
+    <Content Include="Views\alumno_nuevo_editar.html" />
     <Content Include="Views\alumno_detalle.html" />
     <Content Include="Views\alumno_listado.html" />
     <Content Include="Web.config" />
